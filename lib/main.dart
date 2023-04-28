@@ -10,10 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "MedApp",
-      home: const Splash_launch(),
+      home: Splash_launch(),
     );
   }
 }

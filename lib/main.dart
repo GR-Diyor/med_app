@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:med_app/Resource/CustomPainting.dart';
+import 'package:get/get.dart';
 import 'package:med_app/UI/Pages/Splash/Splash_launch.dart';
+import 'package:med_app/Utills/Binding.dart';
 
-void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setSystemUIOverlayStyle(CustomPainting.systemUiOverlayStyle);
-  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky, overlays: [
-    SystemUiOverlay.top,
-    SystemUiOverlay.bottom,
-  ]);
+import 'Resource/AppSetting.dart';
+
+Future<void> main() async {
+  await AppSetting.init();
   runApp(const MyApp());
 }
 
@@ -18,10 +15,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: "MedApp",
-      home: Splash_launch(),
+      initialBinding: AllControllerBinding(),
+      themeMode: ThemeMode.light,
+      smartManagement: SmartManagement.full,
+      checkerboardOffscreenLayers: true,
+      checkerboardRasterCacheImages: true,
+      home: const Splash_launch(),
     );
   }
 }

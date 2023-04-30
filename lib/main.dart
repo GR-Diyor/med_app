@@ -7,6 +7,7 @@ import 'Resource/AppSetting.dart';
 
 Future<void> main() async {
   await AppSetting.init();
+  await AllControllerInit.init();
   runApp(const MyApp());
 }
 
@@ -15,15 +16,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: "MedApp",
-      initialBinding: AllControllerBinding(),
       themeMode: ThemeMode.light,
       smartManagement: SmartManagement.full,
-      checkerboardOffscreenLayers: true,
-      checkerboardRasterCacheImages: true,
-      home: const Splash_launch(),
+      home: Splash_launch(),
     );
   }
 }

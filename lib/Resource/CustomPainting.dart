@@ -5,12 +5,12 @@ import 'package:med_app/Resource/AppColor.dart';
 class CustomPainting{
   static SystemUiOverlayStyle systemUiOverlayStyle = SystemUiOverlayStyle(
     statusBarColor: AppColor.transparent,
-    statusBarBrightness: Brightness.light,
-    statusBarIconBrightness: Brightness.light,
+    statusBarBrightness: Brightness.dark,
+    statusBarIconBrightness: Brightness.dark,
     systemStatusBarContrastEnforced: true,
     systemNavigationBarIconBrightness: Brightness.dark,
     systemNavigationBarColor: AppColor.transparent,
     systemNavigationBarDividerColor: AppColor.transparent,
-    systemNavigationBarContrastEnforced: false,
+    systemNavigationBarContrastEnforced: true,
   );
 }

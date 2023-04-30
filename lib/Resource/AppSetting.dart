@@ -10,8 +10,18 @@ class AppSetting{
       DeviceOrientation.portraitUp,
       DeviceOrientation.portraitDown
     ]);
+
+  }
+  static Future<void>fullScreen()async{
     SystemChrome.setSystemUIOverlayStyle(CustomPainting.systemUiOverlayStyle);
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky, overlays: [
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack, overlays: [
+      SystemUiOverlay.top,
+      SystemUiOverlay.bottom,
+    ]);
+  }
+  static Future<void>manualScreen()async{
+    SystemChrome.setSystemUIOverlayStyle(CustomPainting.systemUiOverlayStyle);
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: [
       SystemUiOverlay.top,
       SystemUiOverlay.bottom,
     ]);

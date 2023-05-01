@@ -3,5 +3,5 @@
 **An application made during experience**
 
 # Mobil ilova
-![Struktura1!](https://github.com/GR-Diyor/med_app/assets/readme/UI.png)
+![UI!](https://github.com/GR-Diyor/med_app/blob/main/assets/readme/UI.png)
 

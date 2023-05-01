@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:med_app/UI/Pages/Splash/Splash_Get_Started.dart';
+import 'package:med_app/UI/Splash/Splash_Get_Started.dart';
 
 import '../../Resource/AppSetting.dart';
 
@@ -16,7 +16,7 @@ class SplashOnBoardingController extends GetxController{
 
   void NEXTValue(){
     if(currentIndex==2) {
-      Get.to(()=>const SplashGetStarted());
+      Get.to(()=>const SplashGetStarted(),duration: const Duration(milliseconds: 500),transition: Transition.rightToLeftWithFade);
     } else {
       currentIndex++;
     }

@@ -59,7 +59,7 @@ class _SplashOnBoardingState extends State<SplashOnBoarding> {
                   child: Padding(
                     padding:const EdgeInsets.only(left: 10,right: 10),
                     child: Image.asset("assets/splash/Images.png",
-                        fit: BoxFit.cover, alignment: Alignment.center),
+                        fit: BoxFit.cover, alignment: Alignment.center,height: AppSize.height(context)/2,),
                   ),
                 ),
                 //

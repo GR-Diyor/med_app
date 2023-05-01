@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:med_app/UI/Registration/Sign_in.dart';
 
 import '../../../Resource/AppColor.dart';
 import '../../../Resource/AppSize.dart';
@@ -27,11 +30,12 @@ class SplashGetStarted extends StatelessWidget {
         bottomOpacity: 0,
       ),
       body: Stack(
+        fit: StackFit.expand,alignment: Alignment.topCenter,
         children: [
           //background gradient
           Positioned(
             top: 0.0,
-            child: SvgPicture.asset("assets/splash/SplashGetStartedGradient.svg",
+            child:  SvgPicture.asset("assets/splash/SplashGetStartedGradient.svg",
                 fit: BoxFit.cover, clipBehavior: Clip.hardEdge),
           ),
           SizedBox(
@@ -42,7 +46,7 @@ class SplashGetStarted extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Image.asset("assets/splash/SplashGetStartedMan2.png",
-                    fit: BoxFit.cover,alignment: Alignment.center,),
+                    fit: BoxFit.cover,alignment: Alignment.center,height: AppSize.height(context)/2,),
                 Container(
                   height: AppSize.height(context) / 2.9,
                   width: AppSize.width(context),
@@ -58,8 +62,8 @@ class SplashGetStarted extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          const Text("Improve the Quality \nof Service for Patient\n Happiness",
-                          style: TextStyle(color:Colors.black,fontWeight: FontWeight.bold,fontSize: 25, ),
+                           Text("Improve the Quality \nof Service for Patient\n Happiness",
+                          style: TextStyle(color:Colors.black,fontWeight: FontWeight.bold,fontSize: Theme.of(context).textTheme.titleLarge!.fontSize, ),
                           ),
                           const SizedBox(height: 30,),
                           MaterialButton(
@@ -69,7 +73,9 @@ class SplashGetStarted extends StatelessWidget {
                               elevation: 0,
                               clipBehavior: Clip.none,
                               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-                              onPressed: (){},
+                              onPressed: (){
+
+                              },
                             child: Text("Get Started",style: TextStyle(color: Colors.white,fontSize: Theme.of(context).textTheme.titleMedium!.fontSize),),
                           ),
                           const SizedBox(height: 15,),
@@ -78,9 +84,16 @@ class SplashGetStarted extends StatelessWidget {
                               text: "Have an account? ",
                               style: TextStyle(color: AppColor.textGrey,fontSize: Theme.of(context).textTheme.titleSmall!.fontSize),
                             children: [
-                                TextSpan(
-                                text: "Login",
-                                style: TextStyle(color: AppColor.bottonPrimary,fontSize: Theme.of(context).textTheme.titleSmall!.fontSize),)
+                                WidgetSpan(
+                                  child: GestureDetector(
+                                    onTap:(){
+                                      Get.to(()=>const SignIn(),duration: const Duration(milliseconds: 200),transition: Transition.noTransition);
+                                    },
+                                    child: Text("Login",
+                                      style: TextStyle(color: AppColor.bottonPrimary,fontSize: Theme.of(context).textTheme.titleSmall!.fontSize),),
+                                  )
+                                ),
+
                                 ]
                             ),
 

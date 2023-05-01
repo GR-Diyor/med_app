@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:med_app/UI/Pages/Splash/Splash_launch.dart';
+import 'package:med_app/UI/Splash/Splash_launch.dart';
 import 'package:med_app/Utills/Binding.dart';
 
 import 'Resource/AppSetting.dart';

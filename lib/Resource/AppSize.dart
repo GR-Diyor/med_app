@@ -10,4 +10,10 @@ class AppSize{
   static double width(BuildContext context){
     return MediaQuery.of(context).size.width;
   }
+  static Widget SpaceHeight(int h){
+   return SizedBox(height: h.toDouble(),);
+  }
+  static Widget SpaceWidth(int w){
+    return SizedBox(width: w.toDouble(),);
+  }
 }

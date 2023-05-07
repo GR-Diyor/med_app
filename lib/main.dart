@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:med_app/UI/Splash/Splash_launch.dart';
+import 'package:med_app/UI/Home/home1.dart';
 import 'package:med_app/Utills/Binding.dart';
 
 import 'Resource/AppSetting.dart';
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       title: "MedApp",
       themeMode: ThemeMode.light,
       smartManagement: SmartManagement.full,
-      home: Splash_launch(),
+      home: Home1(),
     );
   }
 }

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:med_app/Controller/Registration/VerifyCodeEmailController.dart';
 import 'package:med_app/UI/Registration/SignUpSetUpPhone.dart';
-
 import '../../Resource/AppColor.dart';
 import '../../Resource/AppSize.dart';
 
@@ -48,7 +47,7 @@ class _VerifyCodeEmailState extends State<VerifyCodeEmail> {
                     "Please enter the code we just sent to email\n"
                         "@emailName",
                     style: TextStyle(
-                        color: AppColor.textGrey,
+                        color: AppColor.grey,
                         fontSize:
                         Theme.of(context).textTheme.bodySmall!.fontSize),
                   ),
@@ -81,7 +80,7 @@ class _VerifyCodeEmailState extends State<VerifyCodeEmail> {
                   MaterialButton(
                     height: 50,
                     minWidth: AppSize.Maxwidth,
-                    color: AppColor.bottonPrimary,
+                    color: AppColor.blue,
                     elevation: 0,
                     clipBehavior: Clip.none,
                     shape: RoundedRectangleBorder(

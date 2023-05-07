@@ -16,4 +16,6 @@ class AppSize{
   static Widget SpaceWidth(int w){
     return SizedBox(width: w.toDouble(),);
   }
+
+  static EdgeInsets paddingScreen=const EdgeInsets.only(left: 20,right: 20);
 }

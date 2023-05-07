@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:med_app/Controller/Splash/SplashOnBoardingController.dart';
 import 'package:med_app/Resource/AppColor.dart';
-import 'package:med_app/Resource/AppSetting.dart';
 import 'package:med_app/Resource/AppSize.dart';
 
 class SplashOnBoarding extends StatefulWidget {
@@ -32,6 +32,7 @@ class _SplashOnBoardingState extends State<SplashOnBoarding> {
             resizeToAvoidBottomInset: false,
             extendBodyBehindAppBar: true,
             appBar: AppBar(
+              systemOverlayStyle: SystemUiOverlayStyle.dark,
               centerTitle: true,
               backgroundColor: AppColor.transparent,
                title: SvgPicture.asset(
@@ -49,9 +50,9 @@ class _SplashOnBoardingState extends State<SplashOnBoarding> {
                 //background gradient
                 Positioned(
                   top: 0.0,
-                  // bottom: AppSize.height/2,
+                  right: 0.0,
                   child: SvgPicture.asset("assets/splash/OnBoardingGradient.svg",
-                      fit: BoxFit.cover, clipBehavior: Clip.hardEdge),
+                      fit: BoxFit.cover, clipBehavior: Clip.none,),
                 ),
                 //phone image
                 Positioned(
@@ -74,7 +75,7 @@ class _SplashOnBoardingState extends State<SplashOnBoarding> {
                         height: AppSize.height(context) / 2.9,
                         width: AppSize.width(context),
                         decoration: BoxDecoration(
-                          color: AppColor.bottonPrimary,
+                          color: AppColor.blue,
                         ),
                         child: Stack(
                           children: [
@@ -166,7 +167,7 @@ class _SplashOnBoardingState extends State<SplashOnBoarding> {
                                                       BorderRadius.circular(27)),
                                               child: Icon(
                                                 Icons.arrow_forward_outlined,
-                                                color: AppColor.bottonPrimary,
+                                                color: AppColor.blue,
                                               ),
                                             ),
                                           ),

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:med_app/Resource/AppColor.dart';
 import 'package:med_app/Resource/AppSetting.dart';
@@ -50,7 +48,7 @@ class _SignInState extends State<SignIn> {
               Text(
                 "Sign In to your account",
                 style: TextStyle(
-                    color: AppColor.textGrey,
+                    color: AppColor.grey,
                     fontSize: Theme.of(context).textTheme.bodySmall!.fontSize),
               ),
               AppSize.SpaceHeight(20),
@@ -118,7 +116,7 @@ class _SignInState extends State<SignIn> {
               //forgot
               Align(
                 alignment: Alignment.centerRight,
-                child: Text("Forgot Password?",style: TextStyle(color: AppColor.bottonPrimary,fontWeight: FontWeight.bold),),
+                child: Text("Forgot Password?",style: TextStyle(color: AppColor.blue,fontWeight: FontWeight.bold),),
               ),
 
 
@@ -128,7 +126,7 @@ class _SignInState extends State<SignIn> {
               MaterialButton(
                 height: 50,
                 minWidth: AppSize.Maxwidth,
-                color: AppColor.bottonPrimary,
+                color: AppColor.blue,
                 elevation: 0,
                 clipBehavior: Clip.none,
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
@@ -143,7 +141,7 @@ class _SignInState extends State<SignIn> {
                 child: Text.rich(
                   TextSpan(
                       text: "Don't have an account? ",
-                      style: TextStyle(color: AppColor.textGrey,fontSize: Theme.of(context).textTheme.titleSmall!.fontSize),
+                      style: TextStyle(color: AppColor.grey,fontSize: Theme.of(context).textTheme.titleSmall!.fontSize),
                       children: [
                         WidgetSpan(
                             child: GestureDetector(
@@ -151,7 +149,7 @@ class _SignInState extends State<SignIn> {
                                Get.to(()=>const SignUp(),duration: const Duration(milliseconds: 200),transition: Transition.noTransition);
                               },
                               child: Text("Sign Up",
-                                style: TextStyle(color: AppColor.bottonPrimary,fontSize: Theme.of(context).textTheme.titleSmall!.fontSize),),
+                                style: TextStyle(color: AppColor.blue,fontSize: Theme.of(context).textTheme.titleSmall!.fontSize),),
                             )
                         ),
 

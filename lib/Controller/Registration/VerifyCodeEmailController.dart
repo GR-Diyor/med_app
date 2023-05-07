@@ -13,13 +13,14 @@ class VerifyCodeEmailController extends GetxController{
   }
 
   Widget WidgetCodeField(BuildContext context,int id,bool active) {
+
     return Container(
       height: 56,
       width: 56,
       decoration: BoxDecoration(
         shape: BoxShape.rectangle,
         borderRadius: BorderRadius.circular(26),
-        color: active?AppColor.primary:AppColor.textGrey.withOpacity(0.2),
+        color: active?AppColor.primary:AppColor.grey.withOpacity(0.2),
         border: Border.all(width: active?1:0.3,color: active?Colors.blue:Colors.grey),
       ),
       child:  TextField(

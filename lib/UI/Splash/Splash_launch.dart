@@ -2,11 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:med_app/Controller/Splash/SplashLaunchController.dart';
-import 'package:med_app/Controller/Splash/SplashOnBoardingController.dart';
 import 'package:med_app/Resource/AppSetting.dart';
 import 'package:med_app/Resource/CustomWidget.dart';
-
-import 'Splash_OnBoarding.dart';
 
 class Splash_launch extends StatefulWidget {
   const Splash_launch({Key? key}) : super(key: key);
@@ -16,8 +13,6 @@ class Splash_launch extends StatefulWidget {
 }
 
 class _Splash_launchState extends State<Splash_launch> {
-
-  // var controller = Get.put(SplashOnBoardingController());
   @override
   void initState() {
     AppSetting.fullScreen();

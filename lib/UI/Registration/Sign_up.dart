@@ -61,7 +61,7 @@ class _SignUpState extends State<SignUp> {
                     Text(
                       "Create account and enjoy all services",
                       style: TextStyle(
-                          color: AppColor.textGrey,
+                          color: AppColor.grey,
                           fontSize:
                               Theme.of(context).textTheme.bodySmall!.fontSize),
                     ),
@@ -187,17 +187,17 @@ class _SignUpState extends State<SignUp> {
                               Get.find<SignUpController>().WidgetValidate(
                                   value: true,
                                   onChanged: (v) {},
-                                  title:  Text("Miniaml 8 characters",style: TextStyle(fontSize: 14,color: AppColor.textGrey),)),
+                                  title:  Text("Miniaml 8 characters",style: TextStyle(fontSize: 14,color: AppColor.grey),)),
                               Get.find<SignUpController>().WidgetValidate(
                                 value: false,
                                 onChanged: (v) {},
-                                title:  Text("Atleast 1 number (1-9)",style: TextStyle(fontSize: 14,color: AppColor.textGrey),),
+                                title:  Text("Atleast 1 number (1-9)",style: TextStyle(fontSize: 14,color: AppColor.grey),),
                               ),
                               Get.find<SignUpController>().WidgetValidate(
                                 value: true,
                                 onChanged: (v) {},
                                 title:  Text(
-                                    "Atleast lowercase or uppercase letters",style: TextStyle(fontSize: 14,color: AppColor.textGrey)),
+                                    "Atleast lowercase or uppercase letters",style: TextStyle(fontSize: 14,color: AppColor.grey)),
                               ),
                             ],
                           )
@@ -232,7 +232,7 @@ class _SignUpState extends State<SignUp> {
                     MaterialButton(
                       height: 50,
                       minWidth: AppSize.Maxwidth,
-                      color: AppColor.bottonPrimary,
+                      color: AppColor.blue,
                       elevation: 0,
                       clipBehavior: Clip.none,
                       shape: RoundedRectangleBorder(
@@ -259,7 +259,7 @@ class _SignUpState extends State<SignUp> {
                         TextSpan(
                             text: "Have an account? ",
                             style: TextStyle(
-                                color: AppColor.textGrey,
+                                color: AppColor.grey,
                                 fontSize: Theme.of(context)
                                     .textTheme
                                     .titleSmall!
@@ -276,7 +276,7 @@ class _SignUpState extends State<SignUp> {
                                 child: Text(
                                   "Sign In",
                                   style: TextStyle(
-                                      color: AppColor.bottonPrimary,
+                                      color: AppColor.blue,
                                       fontSize: Theme.of(context)
                                           .textTheme
                                           .titleSmall!

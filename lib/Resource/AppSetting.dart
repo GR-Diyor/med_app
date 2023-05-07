@@ -14,7 +14,7 @@ class AppSetting{
   }
   static Future<void>fullScreen()async{
     SystemChrome.setSystemUIOverlayStyle(CustomPainting.systemUiOverlayStyle);
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack, overlays: [
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky, overlays: [
       SystemUiOverlay.top,
       SystemUiOverlay.bottom,
     ]);

@@ -4,8 +4,6 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_state_manager/src/simple/get_state.dart';
 import 'package:med_app/Controller/Registration/SignUpVerifyCodePhoneController.dart';
 import 'package:med_app/UI/Registration/SignUpSuccessFully.dart';
-
-import '../../Controller/Registration/VerifyCodeEmailController.dart';
 import '../../Resource/AppColor.dart';
 import '../../Resource/AppSize.dart';
 
@@ -50,7 +48,7 @@ class _SignUpVerifyCodePhoneState extends State<SignUpVerifyCodePhone> {
                       "Please enter the code we just sent to phone\n"
                           "+xxx Phone Number",
                       style: TextStyle(
-                          color: AppColor.textGrey,
+                          color: AppColor.grey,
                           fontSize:
                           Theme.of(context).textTheme.bodySmall!.fontSize),
                     ),
@@ -83,7 +81,7 @@ class _SignUpVerifyCodePhoneState extends State<SignUpVerifyCodePhone> {
                     MaterialButton(
                       height: 50,
                       minWidth: AppSize.Maxwidth,
-                      color: AppColor.bottonPrimary,
+                      color: AppColor.blue,
                       elevation: 0,
                       clipBehavior: Clip.none,
                       shape: RoundedRectangleBorder(

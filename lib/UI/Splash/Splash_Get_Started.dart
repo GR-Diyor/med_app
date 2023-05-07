@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:med_app/UI/Home/home1.dart';
 import 'package:med_app/UI/Registration/Sign_in.dart';
 
 import '../../../Resource/AppColor.dart';
@@ -69,12 +70,12 @@ class SplashGetStarted extends StatelessWidget {
                           MaterialButton(
                               height: 50,
                               minWidth: AppSize.Maxwidth,
-                              color: AppColor.bottonPrimary,
+                              color: AppColor.blue,
                               elevation: 0,
                               clipBehavior: Clip.none,
                               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
                               onPressed: (){
-
+                                Get.offAll(()=>const Home1(),fullscreenDialog: true,transition: Transition.fadeIn);
                               },
                             child: Text("Get Started",style: TextStyle(color: Colors.white,fontSize: Theme.of(context).textTheme.titleMedium!.fontSize),),
                           ),
@@ -82,7 +83,7 @@ class SplashGetStarted extends StatelessWidget {
                           Text.rich(
                             TextSpan(
                               text: "Have an account? ",
-                              style: TextStyle(color: AppColor.textGrey,fontSize: Theme.of(context).textTheme.titleSmall!.fontSize),
+                              style: TextStyle(color: AppColor.grey,fontSize: Theme.of(context).textTheme.titleSmall!.fontSize),
                             children: [
                                 WidgetSpan(
                                   child: GestureDetector(
@@ -90,7 +91,7 @@ class SplashGetStarted extends StatelessWidget {
                                       Get.to(()=>const SignIn(),duration: const Duration(milliseconds: 200),transition: Transition.noTransition);
                                     },
                                     child: Text("Login",
-                                      style: TextStyle(color: AppColor.bottonPrimary,fontSize: Theme.of(context).textTheme.titleSmall!.fontSize),),
+                                      style: TextStyle(color: AppColor.blue,fontSize: Theme.of(context).textTheme.titleSmall!.fontSize),),
                                   )
                                 ),
 

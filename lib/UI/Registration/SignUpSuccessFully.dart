@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-
 import '../../Resource/AppColor.dart';
 import '../../Resource/AppSize.dart';
+import '../Home/home1.dart';
 
 class SignUpSuccessFully extends StatelessWidget {
   const SignUpSuccessFully({Key? key}) : super(key: key);
@@ -11,13 +10,14 @@ class SignUpSuccessFully extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.bottonPrimary,
+      backgroundColor: AppColor.blue,
       body: Container(
         padding: const EdgeInsets.only(left: 20, right: 20),
         height: AppSize.height(context),
         width: AppSize.width(context),
         child: Stack(
           fit: StackFit.expand,
+          alignment: Alignment.topCenter,
           children: [
             Positioned(
               top: AppSize.height(context)/2-(AppSize.height(context)/4),
@@ -69,11 +69,12 @@ class SignUpSuccessFully extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(4)),
                   onPressed: () {
+                    Get.offAll(()=>const Home1(),fullscreenDialog: true,transition: Transition.fadeIn);
                   },
                   child: Text(
                     "Get Started",
                     style: TextStyle(
-                        color: AppColor.bottonPrimary,
+                        color: AppColor.blue,
                         fontSize:
                             Theme.of(context).textTheme.titleMedium!.fontSize),
                   ),

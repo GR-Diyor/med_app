@@ -6,7 +6,7 @@ import 'package:med_app/Controller/Registration/SignUpVerifyCodePhoneController.
 import 'package:med_app/Controller/Registration/VerifyCodeEmailController.dart';
 import 'package:med_app/Controller/Splash/SplashLaunchController.dart';
 import 'package:med_app/Controller/Splash/SplashOnBoardingController.dart';
-import 'package:med_app/UI/Splash/Splash_Get_Started.dart';
+import '../Controller/Home/Home1Controller.dart';
 
 
 class AllControllerInit{
@@ -18,6 +18,7 @@ class AllControllerInit{
     Get.lazyPut<VerifyCodeEmailController>(() => VerifyCodeEmailController(),fenix: true);
     Get.lazyPut<SignUpSetUpPhoneController>(() => SignUpSetUpPhoneController(),fenix: true);
     Get.lazyPut<SignUpVerifyCodePhoneController>(() => SignUpVerifyCodePhoneController(),fenix: true);
+    Get.lazyPut<Home1Controller>(() => Home1Controller(),fenix: true);
   }
 
 }

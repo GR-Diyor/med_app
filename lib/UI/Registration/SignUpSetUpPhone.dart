@@ -48,7 +48,7 @@ class _SignUpSetUpPhoneState extends State<SignUpSetUpPhone> {
                     Text(
                       "Enter your phone number,we will send\n a authentication code",
                       style: TextStyle(
-                          color: AppColor.textGrey,
+                          color: AppColor.grey,
                           fontSize:
                           Theme.of(context).textTheme.bodySmall!.fontSize),
                     ),
@@ -89,7 +89,7 @@ class _SignUpSetUpPhoneState extends State<SignUpSetUpPhone> {
                     MaterialButton(
                       height: 50,
                       minWidth: AppSize.Maxwidth,
-                      color: AppColor.bottonPrimary,
+                      color: AppColor.blue,
                       elevation: 0,
                       clipBehavior: Clip.none,
                       shape: RoundedRectangleBorder(

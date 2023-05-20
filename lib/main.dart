@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:med_app/UI/Splash/Splash_Get_Started.dart';
+import 'package:med_app/UI/Splash/Splash_launch.dart';
 import 'package:med_app/Utills/Binding.dart';
 
 import 'Main/Main.dart';
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "MedApp",
+      title: "Med App",
       themeMode: ThemeMode.light,
       smartManagement: SmartManagement.full,
       home: Main(),

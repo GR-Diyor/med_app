@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:med_app/Resource/AppSize.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../../Resource/AppColor.dart';
 import '../../Resource/AppSetting.dart';
+import '../../Resource/AppSize.dart';
 
-class Home2 extends StatefulWidget {
-  const Home2({Key? key}) : super(key: key);
+class Home3 extends StatefulWidget {
+  const Home3({Key? key}) : super(key: key);
 
   @override
-  State<Home2> createState() => _Home2State();
+  State<Home3> createState() => _Home3State();
 }
 
-class _Home2State extends State<Home2> {
+class _Home3State extends State<Home3> {
   @override
   void initState() {
     AppSetting.manualScreen();
@@ -106,30 +106,54 @@ class _Home2State extends State<Home2> {
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(
-                            left: 20,
-                            right: 20),
+                        margin: const EdgeInsets.only(left: 20, right: 20),
                         width: AppSize.width(context),
                         child: Row(
                           children: [
-                            Expanded(child: Padding(
-                              padding:  EdgeInsets.only(bottom: 20.0,top: AppSize.height(context) / 4,),
+                            Expanded(
+                                child: Padding(
+                              padding: EdgeInsets.only(
+                                bottom: 20.0,
+                                top: AppSize.height(context) / 4,
+                              ),
                               child: Column(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Welocme",style: TextStyle(
-                                    color: AppColor.dark,fontWeight: FontWeight.w700,
-                                    fontSize: Theme.of(context).textTheme.titleLarge!.fontSize,
-                                  ),),
-                                  Text("Kimdir",style: TextStyle(
-                                    color: AppColor.dark,fontWeight: FontWeight.w700,
-                                    fontSize: Theme.of(context).textTheme.titleLarge!.fontSize,
-                                  ),),
-                                  Text("Have a  nice day",style: TextStyle(
-                                    color: AppColor.grey,fontWeight: FontWeight.w400,
-                                    fontSize: Theme.of(context).textTheme.bodyMedium!.fontSize,
-                                  ),),
+                                  Text(
+                                    "Need emergency",
+                                    style: TextStyle(
+                                      color: AppColor.dark,
+                                      fontWeight: FontWeight.w700,
+                                      fontSize: Theme.of(context)
+                                          .textTheme
+                                          .titleLarge!
+                                          .fontSize,
+                                    ),
+                                  ),
+                                  Text(
+                                    "treatment?",
+                                    style: TextStyle(
+                                      color: AppColor.dark,
+                                      fontWeight: FontWeight.w700,
+                                      fontSize: Theme.of(context)
+                                          .textTheme
+                                          .titleLarge!
+                                          .fontSize,
+                                    ),
+                                  ),
+                                  Text(
+                                    "We will help you faster",
+                                    style: TextStyle(
+                                      color: AppColor.grey,
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: Theme.of(context)
+                                          .textTheme
+                                          .bodyMedium!
+                                          .fontSize,
+                                    ),
+                                  ),
                                   Container(
                                     width: AppSize.width(context) / 2.6,
                                     height: 50,
@@ -139,7 +163,7 @@ class _Home2State extends State<Home2> {
                                     ),
                                     child: Row(
                                       mainAxisAlignment:
-                                      MainAxisAlignment.center,
+                                          MainAxisAlignment.center,
                                       children: [
                                         Icon(
                                           Icons.wb_twilight,
@@ -162,14 +186,6 @@ class _Home2State extends State<Home2> {
                                 ],
                               ),
                             )),
-                            Expanded(
-                                child: Padding(
-                                  padding: EdgeInsets.only(top: AppSize.height(context) / 6.5),
-                                  child: Image.asset(
-                              "assets/home/Person2.png",
-                              fit: BoxFit.cover,
-                            ),
-                                ))
                           ],
                         ),
                       ),
@@ -197,7 +213,7 @@ class _Home2State extends State<Home2> {
                         topLeft: Radius.circular(10),
                         topRight: Radius.circular(10))),
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 25,left: 20,right: 20),
+                  padding: const EdgeInsets.only(top: 25, left: 20, right: 20),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -222,9 +238,10 @@ class _Home2State extends State<Home2> {
                               width: 90,
                               child: FittedBox(
                                 child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.start,
                                   crossAxisAlignment:
-                                  CrossAxisAlignment.center,
+                                      CrossAxisAlignment.center,
                                   children: [
                                     FittedBox(
                                       child: Container(
@@ -251,9 +268,10 @@ class _Home2State extends State<Home2> {
                               width: 90,
                               child: FittedBox(
                                 child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.start,
                                   crossAxisAlignment:
-                                  CrossAxisAlignment.center,
+                                      CrossAxisAlignment.center,
                                   children: [
                                     FittedBox(
                                       child: Container(
@@ -278,9 +296,10 @@ class _Home2State extends State<Home2> {
                               width: 90,
                               child: FittedBox(
                                 child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.start,
                                   crossAxisAlignment:
-                                  CrossAxisAlignment.center,
+                                      CrossAxisAlignment.center,
                                   children: [
                                     FittedBox(
                                       child: Container(
@@ -308,7 +327,7 @@ class _Home2State extends State<Home2> {
                       AppSize.SpaceHeight(30),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children:  [
+                        children: [
                           const Text(
                             "My Appointment",
                             style: TextStyle(
@@ -316,42 +335,20 @@ class _Home2State extends State<Home2> {
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold),
                           ),
-                          Text("See All",style: TextStyle(color: AppColor.blue),),
+                          Text(
+                            "See All",
+                            style: TextStyle(color: AppColor.blue),
+                          ),
                         ],
                       ),
                       AppSize.SpaceHeight(20),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children:  [
-                          const Text(
-                            "Appointment date",
-                            style: TextStyle(
-                                color: Colors.grey,
-                                fontSize: 16,
-                                ),
-                          ),
-                          Icon(Icons.more_vert_outlined,color: AppColor.grey,),
-                        ],
-                      ),
-                      AppSize.SpaceHeight(5),
-                      Row(
-                        children: [
-                          Icon(
-                            Icons.alarm,
-                            color: AppColor.grey.withOpacity(0.4),
-                          ),
-                          AppSize.SpaceWidth(5),
-                          const Text("Wed Jun 20"),
-                        ],
-                      ),
 
                       AppSize.SpaceHeight(15),
-                      Divider(height: 1,color: AppColor.grey,),
                       SizedBox(
                         height: 110,
                         width: AppSize.Maxwidth,
                         child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             SizedBox(
@@ -359,26 +356,51 @@ class _Home2State extends State<Home2> {
                                 children: [
                                   const CircleAvatar(
                                     backgroundImage:
-                                    AssetImage("assets/home/Person1.png"),
+                                        AssetImage("assets/home/Person1.png"),
+                                    radius: 30,
                                   ),
                                   AppSize.SpaceWidth(15),
                                   Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: const [
-                                      Text(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      const Text(
                                         "dr. Nirmala Azalea",
                                         style: TextStyle(
                                             fontSize: 16,
                                             fontWeight: FontWeight.bold),
                                       ),
-                                      Text("Orthopedic"),
-
+                                      const Text("Orthopedic"),
+                                      MaterialButton(
+                                        onPressed: () {},
+                                        height: 24,
+                                        color:
+                                            Colors.greenAccent.withOpacity(0.3),
+                                        elevation: 0,
+                                        colorBrightness: Brightness.light,
+                                        child: Row(
+                                          children: [
+                                            Icon(
+                                              Icons.alarm,
+                                              color: AppColor.blue,
+                                            ),
+                                            AppSize.SpaceWidth(5),
+                                            Text(
+                                              "Wed Jun 20",
+                                              style: TextStyle(
+                                                color: AppColor.blue,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 ],
                               ),
                             ),
+                            const Icon(Icons.navigate_next),
                           ],
                         ),
                       ),

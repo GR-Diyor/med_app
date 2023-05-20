@@ -177,13 +177,14 @@ class _Home1State extends State<Home1> {
                               ),
                               child: Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceAround,
+                                    MainAxisAlignment.center,
                                 children: [
                                   Icon(
                                     Icons.wb_twilight,
                                     color: AppColor.primary,
                                     size: 20,
                                   ),
+                                 AppSize.SpaceWidth(AppSize.width(context)~/25),
                                   Text(
                                     "Urgent Care",
                                     style: TextStyle(
@@ -214,107 +215,95 @@ class _Home1State extends State<Home1> {
                     SizedBox(
                       height: 110,
                       width: AppSize.Maxwidth,
-                      child: SingleChildScrollView(
-                        scrollDirection: Axis.horizontal,
-                        physics: const BouncingScrollPhysics(),
-                        child: Row(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(right: 20.0),
-                              child: SizedBox(
-                                height: 90,
-                                width: 90,
-                                child: FittedBox(
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: [
-                                      FittedBox(
-                                        child: Container(
-                                          height: 70,
-                                          width: 70,
-                                          alignment: Alignment.center,
-                                          decoration: const BoxDecoration(
-                                              color: Colors.white,
-                                              shape: BoxShape.circle),
-                                          child: SvgPicture.asset(
-                                            "assets/home/logo1.svg",
-                                            fit: BoxFit.cover,
-                                          ),
-                                        ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          SizedBox(
+                            height: 90,
+                            width: 90,
+                            child: FittedBox(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment:
+                                    CrossAxisAlignment.center,
+                                children: [
+                                  FittedBox(
+                                    child: Container(
+                                      height: 70,
+                                      width: 70,
+                                      alignment: Alignment.center,
+                                      decoration: const BoxDecoration(
+                                          color: Colors.white,
+                                          shape: BoxShape.circle),
+                                      child: SvgPicture.asset(
+                                        "assets/home/logo1.svg",
+                                        fit: BoxFit.cover,
                                       ),
-                                      AppSize.SpaceHeight(10),
-                                      const Text("Consultation")
-                                    ],
+                                    ),
                                   ),
-                                ),
+                                  AppSize.SpaceHeight(10),
+                                  const Text("Consultation")
+                                ],
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(right: 20.0),
-                              child: SizedBox(
-                                height: 90,
-                                width: 90,
-                                child: FittedBox(
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: [
-                                      FittedBox(
-                                        child: Container(
-                                          height: 70,
-                                          width: 70,
-                                          alignment: Alignment.center,
-                                          decoration: const BoxDecoration(
-                                              color: Colors.white,
-                                              shape: BoxShape.circle),
-                                          child: Image.asset(
-                                              "assets/home/logo2.png"),
-                                        ),
-                                      ),
-                                      AppSize.SpaceHeight(10),
-                                      const Text("Medicines")
-                                    ],
+                          ),
+                          SizedBox(
+                            height: 90,
+                            width: 90,
+                            child: FittedBox(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment:
+                                    CrossAxisAlignment.center,
+                                children: [
+                                  FittedBox(
+                                    child: Container(
+                                      height: 70,
+                                      width: 70,
+                                      alignment: Alignment.center,
+                                      decoration: const BoxDecoration(
+                                          color: Colors.white,
+                                          shape: BoxShape.circle),
+                                      child: Image.asset(
+                                          "assets/home/logo2.png"),
+                                    ),
                                   ),
-                                ),
+                                  AppSize.SpaceHeight(10),
+                                  const Text("Medicines")
+                                ],
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(right: 20.0),
-                              child: SizedBox(
-                                height: 90,
-                                width: 90,
-                                child: FittedBox(
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: [
-                                      FittedBox(
-                                        child: Container(
-                                          height: 70,
-                                          width: 70,
-                                          alignment: Alignment.center,
-                                          decoration: const BoxDecoration(
-                                              color: Colors.white,
-                                              shape: BoxShape.circle),
-                                          child: SvgPicture.asset(
-                                              "assets/home/logo3.svg"),
-                                        ),
-                                      ),
-                                      const SizedBox(
-                                        height: 10,
-                                      ),
-                                      const Text("Ambulance")
-                                    ],
+                          ),
+                          SizedBox(
+                            height: 90,
+                            width: 90,
+                            child: FittedBox(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment:
+                                    CrossAxisAlignment.center,
+                                children: [
+                                  FittedBox(
+                                    child: Container(
+                                      height: 70,
+                                      width: 70,
+                                      alignment: Alignment.center,
+                                      decoration: const BoxDecoration(
+                                          color: Colors.white,
+                                          shape: BoxShape.circle),
+                                      child: SvgPicture.asset(
+                                          "assets/home/logo3.svg"),
+                                    ),
                                   ),
-                                ),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  const Text("Ambulance")
+                                ],
                               ),
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ),
                     AppSize.SpaceHeight(30),

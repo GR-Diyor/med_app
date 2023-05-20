@@ -94,11 +94,11 @@ class SplashGetStarted extends StatelessWidget {
                                       style: TextStyle(color: AppColor.blue,fontSize: Theme.of(context).textTheme.titleSmall!.fontSize),),
                                   )
                                 ),
-
                                 ]
                             ),
 
                           ),
+
                         ],
                       ),
                     ),

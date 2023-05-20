@@ -5,10 +5,14 @@ import 'package:med_app/Controller/Registration/SignUpController.dart';
 import 'package:med_app/Controller/Registration/SignUpSetUpPhoneController.dart';
 import 'package:med_app/Controller/Registration/SignUpVerifyCodePhoneController.dart';
 import 'package:med_app/Controller/Registration/VerifyCodeEmailController.dart';
+import 'package:med_app/Controller/Schedule/ScheduleMainController.dart';
+import 'package:med_app/Controller/Schedule/SchedulePastController.dart';
+import 'package:med_app/Controller/Schedule/ScheduleUpcomingController.dart';
 import 'package:med_app/Controller/Splash/SplashLaunchController.dart';
 import 'package:med_app/Controller/Splash/SplashOnBoardingController.dart';
 import '../Controller/Home/Home1Controller.dart';
 import '../Controller/Home/Home2Controller.dart';
+import '../Controller/Home/Home3Controller.dart';
 
 
 class AllControllerInit{
@@ -23,6 +27,10 @@ class AllControllerInit{
     Get.lazyPut<MainController>(() => MainController(),fenix: true);
     Get.lazyPut<Home1Controller>(() => Home1Controller(),fenix: true);
     Get.lazyPut<Home2Controller>(() => Home2Controller(),fenix: true);
+    Get.lazyPut<Home3Controller>(() => Home3Controller(),fenix: true);
+    Get.lazyPut<ScheduleMainController>(() => ScheduleMainController(),fenix: true);
+    Get.lazyPut<ScheduleUpcomingController>(() => ScheduleUpcomingController(),fenix: true);
+    Get.lazyPut<SchedulePastController>(() => SchedulePastController(),fenix: true);
   }
 
 }

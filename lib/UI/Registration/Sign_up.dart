@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:med_app/Controller/Registration/SignUpController.dart';
-import 'package:med_app/Resource/AppColor.dart';
+import 'package:med_app/Configs/AppColor.dart';
 import 'package:med_app/UI/Registration/Sign_in.dart';
 import 'package:med_app/UI/Registration/VerifyCodeEmail.dart';
 
-import '../../Resource/AppSize.dart';
+import '../../Configs/AppSize.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({Key? key}) : super(key: key);

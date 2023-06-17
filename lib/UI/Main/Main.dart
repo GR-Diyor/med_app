@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:med_app/UI/Home/home1.dart';
-import 'package:med_app/UI/Home/home2.dart';
-import 'package:med_app/UI/Home/home3.dart';
 
-import '../Resource/AppColor.dart';
-import '../Resource/AppSetting.dart';
-import '../Resource/AppSize.dart';
-import '../UI/Schedule/Schedule_Main.dart';
+import '../../Configs/AppColor.dart';
+import '../../Configs/AppSetting.dart';
+import '../../Configs/AppSize.dart';
+import '../Schedule/Schedule_Main.dart';
+
 
 class Main extends StatefulWidget {
   const Main({Key? key}) : super(key: key);

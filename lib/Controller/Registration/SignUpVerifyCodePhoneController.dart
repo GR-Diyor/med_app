@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
-import '../../Resource/AppColor.dart';
+import '../../Configs/AppColor.dart';
 
 class SignUpVerifyCodePhoneController extends GetxController{
   bool iSActive=false;

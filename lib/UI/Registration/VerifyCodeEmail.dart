@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:med_app/Controller/Registration/VerifyCodeEmailController.dart';
 import 'package:med_app/UI/Registration/SignUpSetUpPhone.dart';
-import '../../Resource/AppColor.dart';
-import '../../Resource/AppSize.dart';
+import '../../Configs/AppColor.dart';
+import '../../Configs/AppSize.dart';
 
 
 class VerifyCodeEmail extends StatefulWidget {

@@ -5,8 +5,8 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:med_app/UI/Home/home1.dart';
 import 'package:med_app/UI/Registration/Sign_in.dart';
 
-import '../../../Resource/AppColor.dart';
-import '../../../Resource/AppSize.dart';
+import '../../../Configs/AppColor.dart';
+import '../../../Configs/AppSize.dart';
 
 class SplashGetStarted extends StatelessWidget {
   const SplashGetStarted({Key? key}) : super(key: key);

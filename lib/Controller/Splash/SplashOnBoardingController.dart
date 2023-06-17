@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:med_app/UI/Splash/Splash_Get_Started.dart';
 
-import '../../Resource/AppSetting.dart';
+import '../../Configs/AppSetting.dart';
 
 class SplashOnBoardingController extends GetxController{
 

@@ -1,10 +1,9 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:med_app/Resource/AppColor.dart';
-import 'package:med_app/Resource/AppSetting.dart';
-import 'package:med_app/Resource/AppSize.dart';
+import 'package:med_app/Configs/AppColor.dart';
+import 'package:med_app/Configs/AppSetting.dart';
+import 'package:med_app/Configs/AppSize.dart';
 
 class Home1 extends StatefulWidget {
   const Home1({Key? key}) : super(key: key);

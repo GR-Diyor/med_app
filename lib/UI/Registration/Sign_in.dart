@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:med_app/Resource/AppColor.dart';
-import 'package:med_app/Resource/AppSetting.dart';
-import 'package:med_app/Resource/AppSize.dart';
+import 'package:med_app/Configs/AppColor.dart';
+import 'package:med_app/Configs/AppSetting.dart';
+import 'package:med_app/Configs/AppSize.dart';
+import 'package:med_app/UI/Forgot_password/forgot_main.dart';
 import 'package:med_app/UI/Registration/Sign_up.dart';
 
 class SignIn extends StatefulWidget {
@@ -116,7 +117,9 @@ class _SignInState extends State<SignIn> {
               //forgot
               Align(
                 alignment: Alignment.centerRight,
-                child: Text("Forgot Password?",style: TextStyle(color: AppColor.blue,fontWeight: FontWeight.bold),),
+                child: GestureDetector(
+                    onTap: ()=>Get.to(const ForgotMain()),
+                    child: Text("Forgot Password?",style: TextStyle(color: AppColor.blue,fontWeight: FontWeight.bold),)),
               ),
 
 

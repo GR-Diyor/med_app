@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:med_app/Resource/AppColor.dart';
+import 'package:med_app/Configs/AppColor.dart';
 
 class VerifyCodeEmailController extends GetxController{
   bool iSActive=false;

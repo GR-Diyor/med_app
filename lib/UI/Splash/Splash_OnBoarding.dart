@@ -3,8 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:med_app/Controller/Splash/SplashOnBoardingController.dart';
-import 'package:med_app/Resource/AppColor.dart';
-import 'package:med_app/Resource/AppSize.dart';
+import 'package:med_app/Configs/AppColor.dart';
+import 'package:med_app/Configs/AppSize.dart';
 
 class SplashOnBoarding extends StatefulWidget {
   const SplashOnBoarding({Key? key}) : super(key: key);

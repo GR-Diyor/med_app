@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../Resource/AppColor.dart';
-import '../../Resource/AppSize.dart';
+import '../../Configs/AppColor.dart';
+import '../../Configs/AppSize.dart';
 import '../Home/home1.dart';
 
 class SignUpSuccessFully extends StatelessWidget {

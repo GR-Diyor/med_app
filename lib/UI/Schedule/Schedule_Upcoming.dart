@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:med_app/Resource/AppColor.dart';
-import 'package:med_app/Resource/AppSize.dart';
+import 'package:med_app/Configs/AppColor.dart';
+import 'package:med_app/Configs/AppSize.dart';
 
 class ScheduleUpcoming extends StatefulWidget {
   const ScheduleUpcoming({Key? key}) : super(key: key);

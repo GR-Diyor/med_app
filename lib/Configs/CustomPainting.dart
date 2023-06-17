@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:med_app/Resource/AppColor.dart';
+import 'package:med_app/Configs/AppColor.dart';
 
 class CustomPainting{
   static SystemUiOverlayStyle systemUiOverlayStyle = SystemUiOverlayStyle(

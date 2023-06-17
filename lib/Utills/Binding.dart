@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:med_app/Controller/Forgot_password/ForgotEmailController.dart';
+import 'package:med_app/Controller/Forgot_password/ForgotMainController.dart';
 import 'package:med_app/Controller/Main/MainController.dart';
 import 'package:med_app/Controller/Registration/SignInController.dart';
 import 'package:med_app/Controller/Registration/SignUpController.dart';
@@ -15,7 +17,7 @@ import '../Controller/Home/Home2Controller.dart';
 import '../Controller/Home/Home3Controller.dart';
 
 
-class AllControllerInit{
+class AllControllerInit extends Bindings{
   static Future<void> init() async {
     Get.lazyPut<SplashLaunchController>(() => SplashLaunchController(),fenix: true);
     Get.lazyPut<SplashOnBoardingController>(() => SplashOnBoardingController(),fenix: true);
@@ -31,6 +33,13 @@ class AllControllerInit{
     Get.lazyPut<ScheduleMainController>(() => ScheduleMainController(),fenix: true);
     Get.lazyPut<ScheduleUpcomingController>(() => ScheduleUpcomingController(),fenix: true);
     Get.lazyPut<SchedulePastController>(() => SchedulePastController(),fenix: true);
+    Get.lazyPut<ForgotMainController>(() => ForgotMainController(),fenix: true);
+    Get.lazyPut<ForgotEmailController>(() => ForgotEmailController(),fenix: true);
+  }
+
+  @override
+  void dependencies() {
+   init();
   }
 
 }

@@ -5,8 +5,8 @@ import 'package:get/get_state_manager/src/simple/get_state.dart';
 import 'package:med_app/Controller/Registration/SignUpSetUpPhoneController.dart';
 import 'package:med_app/UI/Registration/SignUpVerifyCodePhone.dart';
 
-import '../../Resource/AppColor.dart';
-import '../../Resource/AppSize.dart';
+import '../../Configs/AppColor.dart';
+import '../../Configs/AppSize.dart';
 
 class SignUpSetUpPhone extends StatefulWidget {
   const SignUpSetUpPhone({Key? key}) : super(key: key);

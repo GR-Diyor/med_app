@@ -26,4 +26,23 @@ class AppSetting{
       SystemUiOverlay.bottom,
     ]);
   }
+
+  //AppBar
+
+  static SystemUiOverlayStyle defaultUIOverlay = SystemUiOverlayStyle.light;
+
+
+  //Text Style
+
+  static TextStyle style({required BuildContext context,required Color color,required double size,required FontWeight weight}){
+    return  TextStyle(
+      color: color,
+      fontSize: size,
+      fontWeight: weight
+    );
+  }
+
+  static TextTheme theme(BuildContext context){
+    return Theme.of(context).textTheme;
+  }
 }

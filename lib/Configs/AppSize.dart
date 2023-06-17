@@ -1,5 +1,4 @@
-
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class AppSize{
   static double Maxheight=double.maxFinite;
@@ -18,4 +17,23 @@ class AppSize{
   }
 
   static EdgeInsets paddingScreen=const EdgeInsets.only(left: 20,right: 20);
+
+  static Widget FullScreen({required BuildContext context,required Widget child}) {
+    return SizedBox(
+      height: MediaQuery
+          .of(context)
+          .size
+          .height,
+      width: MediaQuery
+          .of(context)
+          .size
+          .width,
+      child: child,
+    );
+  }
+
+  //Text Size
+  static TextTheme theme(BuildContext context){
+    return Theme.of(context).textTheme;
+  }
 }

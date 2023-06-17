@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../Resource/AppColor.dart';
-import '../../Resource/AppSize.dart';
+import '../../Configs/AppColor.dart';
+import '../../Configs/AppSize.dart';
 
 class SchedulePast extends StatefulWidget {
   const SchedulePast({Key? key}) : super(key: key);

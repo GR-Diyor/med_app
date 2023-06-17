@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
+import 'package:med_app/Configs/AppSize.dart';
 import 'package:med_app/Controller/Splash/SplashLaunchController.dart';
-import 'package:med_app/Resource/AppSetting.dart';
-import 'package:med_app/Resource/CustomWidget.dart';
+import 'package:med_app/Configs/AppSetting.dart';
 
 class Splash_launch extends StatefulWidget {
   const Splash_launch({Key? key}) : super(key: key);
@@ -28,8 +28,9 @@ class _Splash_launchState extends State<Splash_launch> {
       body: Stack(
         clipBehavior: Clip.none,
         children: [
-          CustomWidget.FullScreen(
-              context,
+          AppSize.FullScreen(
+              context:context,
+              child:
               SvgPicture.asset(
                 "assets/splash/SplashGradient.svg",
                 fit: BoxFit.fill,

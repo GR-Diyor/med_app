@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:med_app/Controller/Schedule/ScheduleMainController.dart';
-import 'package:med_app/Resource/AppColor.dart';
-import 'package:med_app/Resource/AppSetting.dart';
+import 'package:med_app/Configs/AppColor.dart';
+import 'package:med_app/Configs/AppSetting.dart';
 import 'package:med_app/UI/Schedule/Schedule_Past.dart';
 import 'package:med_app/UI/Schedule/Schedule_Upcoming.dart';
 
-import '../../Resource/AppSize.dart';
+import '../../Configs/AppSize.dart';
 
 class ScheduleMain extends StatefulWidget {
   const ScheduleMain({Key? key}) : super(key: key);

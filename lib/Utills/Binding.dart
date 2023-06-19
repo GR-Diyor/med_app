@@ -1,6 +1,8 @@
 import 'package:get/get.dart';
 import 'package:med_app/Controller/Forgot_password/ForgotEmailController.dart';
 import 'package:med_app/Controller/Forgot_password/ForgotMainController.dart';
+import 'package:med_app/Controller/Forgot_password/ForgotPhoneController.dart';
+import 'package:med_app/Controller/Forgot_password/ForgotSuccessfullyController.dart';
 import 'package:med_app/Controller/Main/MainController.dart';
 import 'package:med_app/Controller/Registration/SignInController.dart';
 import 'package:med_app/Controller/Registration/SignUpController.dart';
@@ -12,6 +14,8 @@ import 'package:med_app/Controller/Schedule/SchedulePastController.dart';
 import 'package:med_app/Controller/Schedule/ScheduleUpcomingController.dart';
 import 'package:med_app/Controller/Splash/SplashLaunchController.dart';
 import 'package:med_app/Controller/Splash/SplashOnBoardingController.dart';
+import '../Controller/Forgot_password/ForgotNewPasswordController.dart';
+import '../Controller/Forgot_password/ForgotOtpPhoneController.dart';
 import '../Controller/Home/Home1Controller.dart';
 import '../Controller/Home/Home2Controller.dart';
 import '../Controller/Home/Home3Controller.dart';
@@ -35,6 +39,10 @@ class AllControllerInit extends Bindings{
     Get.lazyPut<SchedulePastController>(() => SchedulePastController(),fenix: true);
     Get.lazyPut<ForgotMainController>(() => ForgotMainController(),fenix: true);
     Get.lazyPut<ForgotEmailController>(() => ForgotEmailController(),fenix: true);
+    Get.lazyPut<ForgotNewPasswordController>(() => ForgotNewPasswordController(),fenix: true);
+    Get.lazyPut<ForgotOtpPhoneController>(() => ForgotOtpPhoneController(),fenix: true);
+    Get.lazyPut<ForgotPhoneController>(() => ForgotPhoneController(),fenix: true);
+    Get.lazyPut<ForgotSuccessfullyController>(() => ForgotSuccessfullyController(),fenix: true);
   }
 
   @override
@@ -43,35 +51,3 @@ class AllControllerInit extends Bindings{
   }
 
 }
-
-
-
-// enum AniProps { opacity, translateY }
-//
-// class FadeAnimation extends StatelessWidget {
-//   final double delay;
-//   final Widget child;
-//
-//   const FadeAnimation(this.delay, this.child);
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     final tween = MultiTween<AniProps>()
-//       ..add(AniProps.opacity, Tween(begin: 0.0, end: 1.0))
-//       ..add(AniProps.translateY, Tween(begin: -30.0, end: 0.0), const Duration(milliseconds: 500), Curves.easeOut);
-//
-//     return PlayAnimation<MultiTweenValues<AniProps>>(
-//       delay: Duration(milliseconds: (500 * delay).round()),
-//       duration: tween.duration,
-//       tween: tween,
-//       child: child,
-//       builder: (context, child, animation) => Opacity(
-//         opacity: animation.get(AniProps.opacity),
-//         child: Transform.translate(
-//             offset: Offset(0, animation.get(AniProps.translateY)),
-//             child: child
-//         ),
-//       ),
-//     );
-//   }
-// }

@@ -5,11 +5,11 @@ import 'package:med_app/Configs/AppColor.dart';
 import 'package:med_app/Configs/AppSetting.dart';
 import 'package:med_app/Configs/AppSize.dart';
 import 'package:med_app/Configs/CustomWidget.dart';
-import 'package:med_app/UI/Forgot_password/forgot_phone.dart';
+import 'package:med_app/UI/Forgot_password/forgot_otp_phone.dart';
 
 
-class ForgotEmail extends StatelessWidget {
-  const ForgotEmail({Key? key}) : super(key: key);
+class ForgotPhone extends StatelessWidget {
+  const ForgotPhone({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class ForgotEmail extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                   Text(
+                  Text(
                     'Reset Password',
                     style: AppSetting.style(
                         context: context,
@@ -37,13 +37,13 @@ class ForgotEmail extends StatelessWidget {
                   ),
                   AppSize.SpaceHeight(5),
                   const Text(
-                    'Enter your email, we will send a verification code to email',
+                    'Enter your phone number, we will send a verification code to email',
                   ),
                   AppSize.SpaceHeight(20),
                   TextFormField(
                     decoration: const InputDecoration(
-                        prefixIcon: Icon(Icons.email_outlined,color: Colors.grey,),
-                        labelText: "Type your email"
+                        prefixIcon: Icon(Icons.flag,color: Colors.grey,),
+                        labelText: "Type your phone number"
                     ),
                     style: const TextStyle(
                       color: Colors.black,
@@ -62,7 +62,7 @@ class ForgotEmail extends StatelessWidget {
                   elevation: 0,
                   clipBehavior: Clip.none,
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-                  onPressed: ()=>Get.to(()=>const ForgotPhone()),
+                  onPressed: ()=>Get.to(()=>const ForgotOtpPhone()),
                   child: Text("Send link",style: TextStyle(color: Colors.white,fontSize: Theme.of(context).textTheme.titleMedium!.fontSize),),
                 ),
               ),
